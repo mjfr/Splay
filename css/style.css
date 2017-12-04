@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
 }
+
+input:focus {
+    outline: none;
+}
+
 body{
     margin: 0;
 }
