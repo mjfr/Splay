@@ -1,0 +1,873 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* Fundos */
+.bg-beje{
+    background-color: #FFF3D6;
+    padding: 70px;
+}
+.bg-laranja{
+    background-color: #F9A833;
+    font-family: "Rajdhani SemiBold";
+    color: white;
+}
+.bg-deg-laranja-i{
+    background-image: linear-gradient(to left, #B15801, #F9922F, #FDC640);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.bg-laranja p{
+    font-size: 50px;
+}
+.bg-deg-roxo{
+    background-image: linear-gradient(to right, #2F213D, #7A41B2);
+}
+.bg-lilas{
+    background-color: #E1CBFD;
+    padding: 20px;
+    height: 550px;
+}
+.bg-lilas-wd{
+    background-color: #E1CBFD;
+    height: 530px;
+}
+.bg-lilas-flip{
+    background-color: #E1CBFD;
+    padding-top: 20px;
+}
+.bg-escuro{
+    background-color: #d49165;
+    color: white;
+    font-family: "Rajdhani SemiBold";
+    font-size: 35px;  
+}
+.bg-lilas-escuro{
+    margin-top: 15px;
+    background-color: #B4A0D5;
+    padding: 20px;
+    display: block;
+}
+.bg-deg-roxo-laranja{
+    background-image: linear-gradient(to right, #2F213E, #543878,#D4A126, #EBB824);
+    margin-bottom: 30px;
+}
+.bg-laranja-salmao{
+    background-color: #f1ac7b;
+    padding-top: 1px;
+    padding-bottom: 4.8px;
+}
+.deg-form{
+    background-image: linear-gradient(to right, #412966, #5B3691, #B9885E, #D4A241);
+    border-radius: 20px;
+    color: white;
+    width: 200px;
+    height: 30px;
+    font-size: 16px;
+    border-style: none;
+    font-family: "Rajdhani Bold";
+    display: flex;
+    margin-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.form-ladinho{
+    display: flex;
+    flex-direction: column;
+    min-width: 80px;
+}
+.cad-flex{
+    align-items: center;
+    display: flex;
+}
+
+#deg-btn{
+    margin-top: 40px; 
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right, #312241, #51346F, #674088, #51346F, #312241 );
+    border-radius: 20px;
+    color: white;
+    width: 200px;
+    height: 45px;
+    font-size: 25px;
+    font-family: "Rajdhani Bold";
+    border-style: none;
+}
+#deg-btn:hover{
+    background-image: linear-gradient(to right, #F2AC3B, #F7B74F, #F2AC3B);
+}
+/* Barras de separação */
+.bar-beje{
+    background-image: linear-gradient(to right, #FEEDBD, #FFF9EB);
+    padding-top: 102px;
+}
+.bar-laranja{
+    background-image: linear-gradient(to right, #FD8833, #FD9B33);
+    padding-top: 40px;
+}
+.bar-laranja-g{
+    background-color: #FD8F33;
+    padding: 20px;
+}
+.bar-laranja-clara-m{
+    background-color: #FFB618;
+    padding: 15px;
+}
+.bar-roxa-p{
+    background-color: #4E335D;
+    padding: 10px;
+}
+.bar-roxa-claro-m{
+    background-color: #756790;
+    padding: 10px;
+}
+.bar-laranja-clara-m{
+    background-color: #F6A519;
+    padding: 15px;
+}
+.bar-laranja-g{
+    background-color: #FA8233;
+    padding: 20px;
+}
+.bar-beje-i{
+    background-image: linear-gradient(to left, #FEEDBD, #FFF9EB);
+    padding-top: 40px;
+}
+.blankSpace{
+    background-color: white;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.bg-deg-laranja{
+    background-image: linear-gradient(to right, #B25801, #F9922F, #FDC640);
+}
+/* cadastro newsletter */
+.flex{
+    display: flex;
+    flex-direction: row;
+    z-index:2;
+}
+#cad{
+    flex-grow: 2;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#bg-newsl{
+    flex-grow: 1;
+}
+#dev-bg{
+    background-image: url(../img/Backgrounds/desenvolvimento.png);
+    block-size: cover;
+    width: 100%;
+    height: 100%;
+}
+/*Caso não tenha a fonte "Radjhani" trocar por "Franklin Gothic"*/
+.titulo-g{
+    font-family: "Rajdhani Bold", "Franklin Gothic Demi Cond";
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.titulo-p{
+    font-family: "Rajdhani Bold", "Franklin Gothic Demi Cond";
+    font-size: 55px;
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+.cad-nl{
+    font-family: "Rajdhani SemiBold", "Franklin Gothic Book";
+    font-size: 25px;
+}
+/* Área dos cards */
+div.back{
+    display: none;
+}
+.flip-card{
+    display: inline-block;
+}
+.flip-card:hover div.face{
+    display: none;
+}
+.flip-card:hover div.back{
+    display: unset;
+}
+/* Área da navbar */
+#navbar{
+    display: flex;
+    position: fixed;
+    margin: 0;
+    width: 100%;
+    background-image: linear-gradient(to right, #FFAB00, #FF8900);
+    padding-left: 0;
+    text-decoration: none;
+    z-index: 999999999;
+}
+#nav-flex{
+    display: flex;
+    justify-content: space-around;
+}
+.navbar{
+    display: flex;
+}
+.navbar a{
+    text-align: center;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: white;
+    font-family: "Rajdhani Bold";
+}
+.navbar a:hover{
+    background-color: #E77F1E;
+}
+#splayNav{
+    top: 0;
+    left: 0;
+}
+#links{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 66px;
+}
+#menu{
+    display:none;
+}
+#close-icon{
+    display:none;
+}
+.close-tamanho{
+    height:65px;
+    width:65px;
+}
+.menu-tamanho{
+    height:66px;
+}
+#nlNav {
+    top: 0;
+    right: 0;
+}
+.link {
+    width: auto;
+    font-size: 30px;
+    background-color: #FFB618;
+}
+/* Tamanho de imagens */ 
+.imgFull{
+    width: 100%;
+    height: 90%;
+    margin-bottom: 0;
+}
+.imgCentro{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 812px;
+}
+/* Fonte */
+@font-face {
+    font-family: "Rajdhani Bold";
+    src: url(../fonts/Rajdhani-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Rajdhani SemiBold";
+    src: url(../fonts/Rajdhani-Light.ttf);
+    font-weight: 300;
+}
+.center-margin{
+    padding-top: 3px;
+    text-align: center; 
+}
+.margem-card-aberto{
+    display: block;
+    margin-left: 3vw;
+    margin: auto;
+    width: 100%;
+    max-width: 372px;
+    height: 0px;
+    transition: height .1s ease-out;
+}
+.margem-card-aberto.expandido{
+    height: 500px;
+}
+#flip-flex{
+    display: flex;
+    justify-content: space-around;
+}
+#senai-espaco{
+    margin-right: 5px;
+}
+/*backgrounds membros */
+#bebg{
+    background-image: url(../img_sombras/back.png);
+}
+#febg{
+    background-image: url(../img_sombras/front-end.png);
+}
+#gbg{
+    background-image: url(../img_sombras/gerencia.png);
+}
+.membros-bg{
+    width: 30vw;
+    height: 8vw;
+    background-size: cover;
+}
+.membro-titulo{
+    color: white;
+    text-align: center;
+    font-family: "Rajdhani Bold";
+    font-size: 55px;
+    padding-top: 36px;
+}
+.membro-flex{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+}
+.bg-fonte{
+    list-style: none;
+    background-color: #b7a3d8;
+    color: white;
+    font-family: "Rajdhani SemiBold";
+    font-size: 50px;
+    width: 30vw;
+    margin-top: 0;
+    height: 315px;
+    padding-top: 5px;
+    padding-left: 20%;
+    border: #b39DD0 4px solid;
+}
+.membros-bg-escuro{
+    background-color: #b7a3d8;
+}
+#wdbg{
+    background-image: url(../img/webdesigners.png);
+    margin-left: auto;
+    margin-right: auto;
+}
+.membro-foto{
+    width: 300px;
+    height: 300px;
+}
+#membro-foto-margem-esq{
+    margin-left:50px;
+}
+#membro-foto-margem-dir{
+    margin-right:50px;
+}
+.membro-flex-foto{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.membro-nome {
+    display: flex;
+    align-items: flex-end;
+}
+.mySlides {
+    display:none;
+    width: 100%;
+}
+.w3-left, .w3-right, .w3-badge {
+    cursor:pointer;
+    color: #FAB527;
+}
+.w3-badge {
+    height:25px;
+    width:25px;
+    padding:0;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+#fundo-slider{
+    background-color: rgba(67, 33, 97, 0.7);
+    padding-top: 8px;
+}
+
+/* MEDIA SCREENS */
+@media screen and (min-width: 1600px) {
+    .form-ladinho{
+        min-width: 80px;
+    }
+    .deg-form{
+        width: 300px;
+        height: 30px;
+        font-size: 16px;
+        margin-right: 200px;
+    }
+    #deg-btn{
+        width: 250px;
+        height: 45px;
+        font-size: 25px;
+        margin-left:105px;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1599px) {
+    .w3-badge {
+        height:20px;
+        width:20px;
+        margin-right: 30px;
+        margin-left: 30px;
+    }
+    .link {
+        font-size:25.5px;
+    }
+    .navbar a{
+        padding: 14px 5px;
+    }
+    #funcionamento-text{
+        font-size:35px;
+    }
+    .card-flip-tamanho{
+        width:200px;
+        height:250px;
+    }
+    .form-ladinho{
+        min-width: none;
+    }
+    .deg-form{
+        width: 200px;
+        height: 30px;
+        font-size: 16px;
+        margin-right: 200px;
+    }
+    #deg-btn{
+        width: 220px;
+        height: 45px;
+        font-size: 25px;
+        margin-left:75px;
+    }
+    /* MEMBROS */
+    .bg-lilas{
+        height: 422px;
+    }
+    .bg-lilas-wd{
+        height: 325px !important;
+    }
+    .bg-escuro{
+        font-size: 30px;
+    }
+    .bg-laranja-salmao{
+        padding-top: 20px;
+    }
+    .membro-titulo{
+        font-size: 40px;
+        padding-top: 10px;
+        padding-bottom:10px;
+        margin-top:0px;
+    }
+    .membro-flex{
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    .bg-fonte{
+        font-size: 35px;
+        margin-top: -25px;
+        padding-left: 5%;
+    }
+    .membro-foto{
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width:650px) and (max-width: 1023px) {
+    .bg-lilas-escuro{
+        padding: 10px;
+    }
+    .link {
+        font-size:15px; 
+    }
+    .navbar a{
+        padding: 14px 8px;
+    }
+    #links{
+        height: 50px;
+    }
+    .img-tamanho {
+        width:50px;
+        height:50px;
+    }
+    .titulo-g{
+        font-size: 48px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .bg-beje{
+        padding: 30px;
+    }
+    .bar-beje-i{
+        padding-top: 20px;
+    }
+    .bar-beje{
+        padding-top: 70px;
+    }
+    .bar-laranja{
+        padding-top: 20px;
+    }
+    #funcionamento-text{
+        font-size:25px;
+    }
+    .card-flip-tamanho{
+        width:200px;
+        height:250px;
+    }
+    .form-ladinho{
+        min-width: none;
+        font-size:22px;
+    }
+    .deg-form{
+        width: 150px;
+        height: 20px;
+        font-size: 22px;
+        margin-right: 100px;
+        margin-left:0;
+    }
+    #deg-btn{
+        width: 170px;
+        height: 30px;
+        font-size: 18px;
+        margin-left:75px;
+        margin-top: 10px; 
+        margin-bottom: 30px;
+    }
+    .imagens-news{
+        width:50px;
+        height:40px;
+    }
+    /* MEMBROS */
+    .bg-lilas{
+        height: 275px;
+    }
+    .bg-lilas-wd{
+        height: 220px !important;
+    }
+    .bg-escuro{
+        font-size: 20px;
+    }
+    .bg-laranja-salmao{
+        padding-top: 20px;
+    }
+    .membro-titulo{
+        font-size: 25px;
+        padding-top: 10px;
+        padding-bottom:15px;
+    }
+    .membro-flex{
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    .bg-fonte{
+        font-size: 25px;
+        margin-top: -25px;
+        padding-left: 5%;
+        height: 180px;
+    }
+    .membro-foto{
+        width: 120px;
+        height: 120px;
+    }
+    #membro-foto-margem-esq{
+        margin-left:25px;
+    }
+    #membro-foto-margem-dir{
+        margin-right:25px;
+    }
+    .imgFull{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 0;
+    }
+    .center-margin{
+        padding-top: 0.5px;
+    }
+    .imgCentro{
+        height:30%;
+    }
+    .bg-deg-laranja-i{
+        background-image: linear-gradient(to left, #B15801, #F9922F, #FDC640);
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .titulo-p{
+        font-size: 45px;
+    }
+    .margem-card-aberto{
+        width: 30vw;
+    }
+    .margem-card-aberto.expandido{
+        height: 45vw;
+    }
+    .w3-badge {
+        height:15px;
+        width:15px;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+    .bar-laranja-clara-m{
+        padding: 12px;
+    }
+    .bar-laranja-g{
+        background-color: #FD8F33;
+        padding: 14px;
+    }
+    .card-flip-tamanho{
+        width:15vw;
+        height:30vw;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:649px) {
+    /* Área da navbar */
+    #navbar{
+        display: flex;
+        position: fixed;
+        margin: 0;
+        width: 100%;
+        background-image: linear-gradient(to right, #FFAB00, #FF8900);
+        padding-left: 0;
+        text-decoration: none;
+        z-index: 1;
+    }
+    .navbar a{
+        text-align: center;
+        padding: 5% 10%;
+        text-decoration: none;
+        color: white;
+        font-family: "Rajdhani Bold";
+        width:100%;
+    }
+    .navbar a:hover{
+        background-color: #E77F1E;
+    }
+    #splayNav{
+        top: 0;
+        left: 0;
+    }
+    #links{
+        display: none;
+    }
+    #links.exibido{
+        display: block;
+        width:100%;
+        height:100%;
+        position:fixed;
+        background-image: linear-gradient(to left bottom, #fcb233,#f48d2b , #b95901,rgba(185, 53, 1, 0.8));
+        top:0;
+        padding-top:9vw;
+        left:0;
+        z-index:2; 
+        color:#FFFFFF;
+    }
+    #close-icon{
+        cursor:pointer;
+        display:block;
+        position:fixed;
+        z-index:2;
+        top:0.5vw;
+        left:45%;  
+    }
+    .close-tamanho{
+        height:8vw;
+        width:8vw;
+    }
+    #nlNav {
+        top: 0;
+        right: 0;
+    }
+    .link {
+        width: auto;
+        font-size: 220%;
+        background-color: #FFB618;
+    }
+    #menu{
+        display:inline-block;
+        margin-left:-7;
+        cursor:pointer;
+    }
+    .menu-tamanho{
+        height:37px;
+        width:64vw;
+    }
+    #n{
+        position:absolute;
+        right:0;
+    }
+    .img-tamanho {
+        width:17vw;
+        height:37px;
+    }
+    .bar-beje{
+        padding-top: 60px;
+    }
+    .imgFull{
+        width: 100%;
+        height: 50%;
+        margin-bottom: 0;
+    }
+    .bar-laranja{
+        padding-top: 15px;
+    }
+    .bar-beje-i{
+        padding-top: 15px;
+    }
+    .titulo-g{
+        font-size: 35px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .bg-beje{
+        padding: 15px;
+    }
+    #funcionamento-text{
+        font-size:21px;
+    }
+    .imgCentro{
+        height:30%;
+    }
+    .titulo-p{
+        font-size: 27px;
+    }
+    .bg-deg-laranja-i{
+        background-image: linear-gradient(to left, #B15801, #F9922F, #FDC640);
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .margem-card-aberto{
+        width: 30vw; 
+    }
+    .margem-card-aberto.expandido{
+        height: 45vw;
+    }
+    #flip-flex{
+        display: flex;
+        justify-content: space-around;
+    }
+    .card-flip-tamanho{
+        width:15vw;
+        /* height:30vw; */
+    }
+    .bg-lilas-escuro{
+        padding: 10px;
+    }
+    .mySlides {
+        display:none;
+        width: 100%;
+        height:50%;
+    }
+    .w3-badge {
+        height:15px;
+        width:10px;
+        margin-right: -2px;
+        margin-left: -2px;
+    }
+    .form-ladinho{
+        min-width: 45px;
+        font-size:15px;
+    }
+    .deg-form{
+        width: 30vw;
+        height: 15px;
+        font-size: 22px;
+        margin-right: 15vw;
+        margin-left:0;
+    }
+    #deg-btn{
+        width: 32vw;
+        height: 25px;
+        font-size: 16px;
+        margin-left:40px;
+        margin-top: 10px; 
+        margin-bottom: 30px;
+    }
+    .imagens-news{
+        width:15vw;
+        height:30px;
+    }
+    .bar-laranja-g{
+        padding: 11px;
+    }
+    .bar-laranja-clara-m{
+        padding: 8px;
+    }
+    .bar-roxa-p{
+        padding: 5px;
+    }
+    /* MEMBROS */
+    .bg-lilas{
+        height: 137px;
+        padding: 10px;
+    }
+    .bg-lilas-wd{
+        height: 245px !important;
+    }
+    .bg-escuro{
+        font-size: 15px;
+    }
+    .bg-laranja-salmao{
+        height:229px;
+        padding-top: 8px;
+    }
+    .membro-titulo{
+        font-size: 15px;
+        padding-top: 2px;
+        padding-bottom:14px;
+        margin-top:0px;
+    }
+    .membro-flex{
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+    }
+    .bg-fonte{
+        font-size: 12px;
+        margin-top: -27px;
+        padding-left: 5%;
+        height: 100px;
+    }
+    .membro-foto{
+        width: 65px;
+        height: 65px;
+    }
+    #membro-foto-margem-esq{
+        margin-left:25vw;
+        margin-top:10px;
+    }
+    #membro-foto-margem-dir{
+        margin-top:10px;
+    }
+    #margem-texto-g{
+        margin-left:25vw;
+    }
+    .membro-flex-foto{
+        display: block;
+        background-color: #e2996c;
+        height:157px;
+    }
+    #wdbg{
+        height:45px;
+        margin-bottom: 8px;
+    }
+    .bar-roxa-claro-m{
+        padding: 5px;
+    }
+    #membro-position{
+        position:absolute;
+        left:15vw;
+    }
+    #membro-position-g{
+        position:absolute;
+        padding-top:75px;
+    } 
+}

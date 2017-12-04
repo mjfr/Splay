@@ -1,0 +1,322 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Gabriel Quintas / Matheus José">
+        <meta name="keywords" content="splay, senai, software, aprendizagem flexível">
+        <meta name="robots" content="index, follow">
+        <meta name="description" content="Página promocional do aplicativo de nome SPlay em conjunto com a instituição SENAI">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/Logos/logoSplayBranco.png">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/w3.css">
+         <script src="js/jquery-1.12.0.min.js"></script>
+        <script src="js/app.js"></script>
+        <title>SPlay</title>
+    </head>
+    <body id="home">
+        <!--Barra de navegação-->
+        <header>
+            <nav>
+                <div id="nav-flex">
+                    <ul id="navbar">
+                        <div id="splayNav">
+                            <a href="#home">
+                                <img class="img-tamanho" src="img/Logos/s_play.png" alt="Home splay">
+                            </a>
+                                <img id="menu" class="menu-tamanho" src="img/Logos/menuBranco.png" alt="menu splay">
+                        </div>
+                        <div id="links">
+                            <img id="close-icon" class="close-tamanho" src="img/Logos/close-iconBranco.png" alt="close-menu">
+                            <div class="link">
+                                <li class="navbar"><a href="#apresentacao">APRESENTAÇÃO</a></li>
+                            </div>
+                            <div class="link">
+                                <li class="navbar"><a href="#funcionamento">FUNCIONAMENTO</a></li>
+                            </div>
+                            <div class="link">
+                                <li class="navbar"><a href="#diferenciais">DIFERENCIAIS</a></li>
+                            </div>
+                            <div class="link">
+                                <li class="navbar"><a href="#desenvolvimento">DESENVOLVIMENTO</a></li>
+                            </div>
+                        </div>
+                        <div id="nlNav">
+                            <a href="#goNewsletter">
+                                <img class="img-tamanho" id="n" src="img/Logos/news.png" alt="Newslleter">
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="bar-beje"><!--Barra degradê beje--></div>
+        
+        <!--Área de apresentação-->
+        <div id="apresentacao">
+            <a href="https://marvelapp.com/383hba1/screen/27802217" target="_blink"><img class="imgFull" src="img/Backgrounds/background.png" alt="Apresentação do splay"></a>
+            <div class="bar-laranja"><!--Barra laranja--></div>
+            <img class="imgFull" src="img/Banners/Motivacao.png" alt="Motivação juvenil">
+            <div class="bar-beje-i" id="funcionamento"><!--Barra degradê beje invertido--></div>
+        </div>
+
+        <!--Área de funcionamento-->
+        <div class="blankSpace">
+            <div class="bg-deg-laranja"><!--Fundo degradê laranja-->
+                <h2 class="titulo-g">FUNCIONAMENTO</h2>
+            </div>
+        </div>
+
+        <div class="bg-beje"><!--Fundo beje-->
+            <div class="bg-laranja"><!--Fundo Laranja-->
+                <div class="center-margin">
+                    <p id="funcionamento-text">
+                        A S.Play é uma plataforma online para aprendizagem flexível e 
+                        não-linear a partir de vídeos curtos e objetivos organizados em 
+                        playlists temáticas personalizáveis.
+                    </p>
+                </div>
+                <img class="imgCentro" src="img/Funcionamento/funcionamento.png" alt="Funcionamento dos singles">
+            </div>
+        </div>
+        <div class="blankSpace">
+            <div class="bg-deg-laranja-i"><!--Fundo degradê laranja invertido-->
+                <h2 class="titulo-p">ESTRUTURA DOS VÍDEOS</h2>
+            </div>
+        </div>
+
+        <div class="bg-beje"><!--Fundo beje-->
+            <img class="imgCentro" src="img/Funcionamento/estrutura_dos_videos.png" alt="Estrutura dos vídeos">
+        </div>
+        <div class="blankSpace">
+            <div class="bg-deg-laranja-i"><!--Fundo degradê laranja invertido -->
+                <h2 class="titulo-p">DISTRIBUIÇÃO</h2>
+            </div>
+        </div>
+
+        <div class="bg-beje"><!--Fundo beje-->
+                <img class="imgCentro" src="img/Funcionamento/distribuicao.png" alt="Distribuição dos vídeos">
+                <div id="diferenciais"></div>
+            </div>
+
+        <!--Área dos diferenciais-->
+        <div class="blankSpace">
+            <div class="bg-deg-roxo"><!--Fundo degradê roxo-->
+                <h2 class="titulo-g">DIFERENCIAIS</h2>
+            </div>
+        </div>
+
+        <div class="bg-lilas-flip"><!--Fundo lilás-->
+            <div id="flip-flex">
+                <div class="flip-card" data-expande="diferencial1">
+                    <div class="face">
+                        <img class="card-flip-tamanho" src="img/Diferencial1/diferencial_1_apagado.png" alt="Desbloqueie o primeiro diferencial">
+                    </div>
+                    <div class="back">
+                        <img class="card-flip-tamanho" src="img/Diferencial1/diferencial_1_aceso_parcialmente.png" alt="">
+                    </div>
+                </div>
+                <div class="flip-card" data-expande="diferencial2">
+                    <div class="face">
+                        <img class="card-flip-tamanho" src="img/Diferencial2/diferencial_2_apagado.png" alt="Desbloqueie o segundo diferencial">
+                    </div>
+                    <div class="back">
+                        <img class="card-flip-tamanho" src="img/Diferencial2/diferencial_2_aceso_parcial.png" alt="">
+                    </div>
+                </div>
+                <div class="flip-card" data-expande="diferencial3">
+                    <div class="face">
+                        <img class="card-flip-tamanho" src="img/Diferencial3/diferencial_3_apagado.png" alt="Desbloqueie o terceiro diferencial">
+                    </div>
+                    <div class="back">
+                        <img class="card-flip-tamanho" src="img/Diferencial3/diferencial_3_aceso_parcialmente.png" alt="">
+                    </div>
+                </div>
+                <div class="flip-card" data-expande="diferencial4">
+                    <div class="face">
+                        <img class="card-flip-tamanho" src="img/Diferencial4/diferencial_4_apagado.png" alt="Desbloqueie o quarto diferencial">
+                    </div>
+                    <div class="back">
+                        <img class="card-flip-tamanho" src="img/Diferencial4/diferencial_4_aceso_parcialmente.png" alt="">
+                    </div>
+                </div>
+            </div>  
+
+            <div class="bg-lilas-escuro"><!--Fundo lilás escuro-->
+                <img class="margem-card-aberto" id="diferencial1" src="img/Diferencial1/diferencial_1_aceso.png" alt="Primeiro diferencial Revelado">
+                <img class="margem-card-aberto" id="diferencial2" src="img/Diferencial2/diferencial_2_aceso.png" alt="Segundo diferencial Revelado">
+                <img class="margem-card-aberto" id="diferencial3" src="img/Diferencial3/diferencial_3_aceso.png" alt="Terceiro diferencial Revelado">
+                <img class="margem-card-aberto" id="diferencial4" src="img/Diferencial4/diferencial_4_aceso.png" alt="Quarto diferencial Revelado">
+            </div>
+        </div>
+        
+        <!--Área do desenvolvimento-->
+        <div class="blankSpace">
+            <div class="bg-deg-roxo-laranja"><!--Fundo degradê roxo-laranja-->
+                <h2 class="titulo-g">DESENVOLVIMENTO</h2>
+            </div>
+            <div id="desenvolvimento"></div>
+            
+              <div class= "w3-display-container">
+                <img class="mySlides" src="img/Desenvolvimento/play.jpg">
+                <img class="mySlides" src="img/Desenvolvimento/home.png">
+                <img class="mySlides" src="img/Desenvolvimento/settings.png">
+                <img class="mySlides" src="img/Desenvolvimento/suggestions.png">
+                <img class="mySlides" src="img/Desenvolvimento/background.png">
+                <div id="fundo-slider" class="w3-container w3-section w3-large w3-text-white w3-display-bottommiddle">
+                  <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                  <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+                  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+                </div>
+              </div>
+
+        </div>
+
+        <div class="blankSpace">
+            <div class="bg-deg-laranja"><!--Fundo degradê laranja-->
+                <h2 class="titulo-g">INSCREVA-SE JÁ!</h2>
+            </div>
+        </div>
+
+        <div class="bar-beje-i" id="goNewsletter"><!--Barra dragradê beje--></div>
+        <div class="flex">
+            <div id="bg-newsl"><img class="imgFull" src="img/Banners/newsletter.png" alt="background do cadastro"></div><!--Passar background na div-->
+            <div id="cad">    
+                <form method="POST">
+                    <div>
+                        <div class="cad-flex respiro-cad"><h3 class="cad-nl"><div class="form-ladinho">Nome:</div></h3><input class="deg-form" type="text" name="nome"></div>
+                        <div class="cad-flex respiro-cad"><h3 class="cad-nl"><div class="form-ladinho">E-mail:</div></h3><input class="deg-form" type="email" name="email"></div>
+                        <div class="cad-flex respiro-cad"><h3 class="cad-nl"><div class="form-ladinho">Senha:</div></h3><input class="deg-form" type="password" name="senha"></div>
+                        <button id="deg-btn" type="submit">Cadastrar</button>
+                </form>
+                    <div>
+                        <a href="http://www.sp.senai.br/" target="_blink"><img class="imagens-news" id="senai-espaco" src="img/Logos/senai.png" alt="senai"></a>
+                        <a href="#home"><img class="imagens-news" src="img/Logos/s_play.png" alt="s.play"></a>
+                    </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="bar-laranja-g"><!--Barra laranja grande--></div>
+        <div class="bar-laranja-clara-m"><!--Barra laranja claro media--></div>
+        <div class="bar-roxa-p"><!--Barra roxa fina--></div>
+
+        <div class="blankSpace">
+            <div class="bg-deg-roxo"><!--Fundo degradê roxo-->
+                <h2 class="titulo-g">MEMBROS</h2>
+            </div>
+        </div>
+
+        <div class="bg-lilas"><!--Fundo lilás-->
+
+            <div class="membro-flex">
+                <div class="membros-bg-escuro">
+                    <div id="bebg" class="membros-bg">
+                        <h2 class="membro-titulo">BACK-END</h2>
+                        <ul class="bg-fonte">
+                            <li>Daniel Clemente</li>
+                            <li>Daniel Kenji</li>
+                            <li>Luciano Bispo</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="membros-bg-escuro">
+                    <div id="febg" class="membros-bg">
+                        <h2 class="membro-titulo">FRONT-END</h2>
+                        <ul class="bg-fonte">
+                            <li>João Matheus</li>
+                            <li>Luis Gustavo</li>
+                            <li>Vinicios Oliveira</li>
+                            <li>Raul Rodrigues</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="membros-bg-escuro">
+                    <div id="gbg" class="membros-bg">
+                        <h2 class="membro-titulo">GERÊNCIA</h2>
+                        <ul class="bg-fonte"> 
+                            <li>Raul Rodrigues</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="bg-lilas-wd"><!--Fundo lilás-->
+        <div class="bg-laranja-salmao"><!--Fundo laranja salmão-->
+            
+            <div >
+                <div id="wdbg" class="membros-bg">
+                    <h2 class="membro-titulo">WEB-DESIGNERS</h2>
+                </div>
+                    <div><!--Fundo mais escuro-->
+                    </div>
+                    <div><!--Fundo mais escuro-->
+                    </div>
+            </div>
+
+            <div class="membro-flex-foto">
+                <div class="membro-nome" id="membro-position">
+                    <img class="membro-foto" id="membro-foto-margem-esq" src="img/matheus.jpeg" alt="Matheus">
+                    <div><span class="bg-escuro" id="margem-texto-m">Matheus José</span></div>
+                </div>
+                <div class="membro-nome" id="membro-position-g">
+                    <div><span class="bg-escuro" id="margem-texto-g">Gabriel Quintas</span></div>
+                    <img class="membro-foto" id="membro-foto-margem-dir" src="img/gabriel.jpg" alt="Gabriel">
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="bar-roxa-claro-m"><!--Barra roxa mais clara media--></div>
+        <div class="bar-laranja-clara-m"><!--Barra laranja clara media--></div>
+        <div class="bar-laranja-g"><!--Barra laranja grande --></div>                
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                 dots[i].className = dots[i].className.replace(" w3-white", "");
+              }
+              x[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " w3-white";
+            }
+        </script>
+
+         <!-- CÓDIGO JQUERY PARA ESCONDER E EXIBIR INFORMAÇÕES DO SITE -->
+         <script>
+             $("#menu").click(function(){
+                 $("#links").addClass('exibido');
+             });   
+ 
+             $("#close-icon").click(function(){
+                 $("#links").removeClass('exibido');
+             });
+         </script>
+    </body>
+</html>
