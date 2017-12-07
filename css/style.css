@@ -1,11 +1,7 @@
 *{
     box-sizing: border-box;
-}
-
-input:focus {
     outline: none;
 }
-
 body{
     margin: 0;
 }
@@ -69,7 +65,7 @@ body{
     border-radius: 20px;
     color: white;
     width: 200px;
-    height: 30px;
+    /* height: 30px; */
     font-size: 16px;
     border-style: none;
     font-family: "Rajdhani Bold";
@@ -95,7 +91,7 @@ body{
     border-radius: 20px;
     color: white;
     width: 200px;
-    height: 45px;
+    /* height: 45px; */
     font-size: 25px;
     font-family: "Rajdhani Bold";
     border-style: none;
@@ -166,7 +162,7 @@ body{
     background-image: url(../img/Backgrounds/desenvolvimento.png);
     block-size: cover;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
 }
 /*Caso não tenha a fonte "Radjhani" trocar por "Franklin Gothic"*/
 .titulo-g{
@@ -247,11 +243,11 @@ div.back{
     display:none;
 }
 .close-tamanho{
-    height:65px;
+    /* height:65px; */
     width:65px;
 }
 .menu-tamanho{
-    height:66px;
+    /* height:66px; */
 }
 #nlNav {
     top: 0;
@@ -265,7 +261,7 @@ div.back{
 /* Tamanho de imagens */ 
 .imgFull{
     width: 100%;
-    height: 90%;
+    /* height: 90%; */
     margin-bottom: 0;
 }
 .imgCentro{
@@ -385,16 +381,39 @@ div.back{
     color: #FAB527;
 }
 .w3-badge {
-    height:25px;
-    width:25px;
+    height:20px;
+    width:20px;
     padding:0;
     margin-right: 50px;
     margin-left: 50px;
 }
 
+.flex-container{
+    display: flex;
+}
+
+.flex-container > *{
+    color: #FAB527;
+    flex: 1;
+}
+
+.flex-container .w3-badge{
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.w3-right{
+    text-align: right;
+}
+
 #fundo-slider{
     background-color: rgba(67, 33, 97, 0.7);
     padding-top: 8px;
+    width: 100%;
+}
+
+.w3-badge{
+    margin: 0px;
 }
 
 /* MEDIA SCREENS */
@@ -404,13 +423,13 @@ div.back{
     }
     .deg-form{
         width: 300px;
-        height: 30px;
-        font-size: 16px;
+        /* height: 30px; */
+        font-size: 20px;
         margin-right: 200px;
     }
     #deg-btn{
         width: 250px;
-        height: 45px;
+        /* height: 45px; */
         font-size: 25px;
         margin-left:105px;
     }
@@ -424,7 +443,7 @@ div.back{
         margin-left: 30px;
     }
     .link {
-        font-size:25.5px;
+        font-size:23px;
     }
     .navbar a{
         padding: 14px 5px;
@@ -434,22 +453,30 @@ div.back{
     }
     .card-flip-tamanho{
         width:200px;
-        height:250px;
+        height:200px;
     }
     .form-ladinho{
         min-width: none;
     }
     .deg-form{
         width: 200px;
-        height: 30px;
-        font-size: 16px;
-        margin-right: 200px;
+        /* height: 30px; */
+        font-size: 18px;
+        margin-right: 100px;
     }
     #deg-btn{
         width: 220px;
         height: 45px;
         font-size: 25px;
         margin-left:75px;
+    }
+    .imagens-news{
+        width: 115px;
+        height: 60px;
+    }
+    .margem-card-aberto.expandido{
+        height: 372px;
+        width: 300px;
     }
     /* MEMBROS */
     .bg-lilas{
@@ -524,8 +551,8 @@ div.back{
         font-size:25px;
     }
     .card-flip-tamanho{
-        width:200px;
-        height:250px;
+        width:120px;
+        /* height:250px; */
     }
     .form-ladinho{
         min-width: none;
@@ -533,8 +560,8 @@ div.back{
     }
     .deg-form{
         width: 150px;
-        height: 20px;
-        font-size: 22px;
+        /* height: 20px; */
+        font-size: 15px;
         margin-right: 100px;
         margin-left:0;
     }
@@ -591,15 +618,15 @@ div.back{
     }
     .imgFull{
         width: 100%;
-        height: 50%;
+        /* height: 50%; */
         margin-bottom: 0;
     }
     .center-margin{
         padding-top: 0.5px;
     }
-    .imgCentro{
+    /* .imgCentro{
         height:30%;
-    }
+    } */
     .bg-deg-laranja-i{
         background-image: linear-gradient(to left, #B15801, #F9922F, #FDC640);
         padding-top: 0;
@@ -608,11 +635,9 @@ div.back{
     .titulo-p{
         font-size: 45px;
     }
-    .margem-card-aberto{
-        width: 30vw;
-    }
     .margem-card-aberto.expandido{
-        height: 45vw;
+        height: 300px;
+        width: 200px;
     }
     .w3-badge {
         height:15px;
@@ -626,10 +651,6 @@ div.back{
     .bar-laranja-g{
         background-color: #FD8F33;
         padding: 14px;
-    }
-    .card-flip-tamanho{
-        width:15vw;
-        height:30vw;
     }
 }
 
@@ -718,7 +739,7 @@ div.back{
     }
     .imgFull{
         width: 100%;
-        height: 50%;
+        /* height: 50%; */
         margin-bottom: 0;
     }
     .bar-laranja{
@@ -738,9 +759,9 @@ div.back{
     #funcionamento-text{
         font-size:21px;
     }
-    .imgCentro{
+    /* .imgCentro{
         height:30%;
-    }
+    } */
     .titulo-p{
         font-size: 27px;
     }
@@ -769,13 +790,14 @@ div.back{
     .mySlides {
         display:none;
         width: 100%;
-        height:50%;
+        /* height:50%; */
     }
     .w3-badge {
         height:15px;
         width:10px;
-        margin-right: -2px;
-        margin-left: -2px;
+        /* margin-right: -2px;
+        margin-left: -2px; */
+
     }
     .form-ladinho{
         min-width: 45px;
@@ -783,8 +805,8 @@ div.back{
     }
     .deg-form{
         width: 30vw;
-        height: 15px;
-        font-size: 22px;
+        /* height: 15px; */
+        font-size: 13px;
         margin-right: 15vw;
         margin-left:0;
     }
